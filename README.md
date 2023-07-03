@@ -9,4 +9,4 @@ I know, it's just a Github Pages readme file. Fancy. But soon, we will all enjoy
 
 -pixel
 
-https://beta.worldwidepixel.ca
+[homepage](https://beta.worldwidepixel.ca/).
