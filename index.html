@@ -42,7 +42,6 @@ body {
 .navimg {
 	display: block;
 	height:24px;
-	padding-top:2px;
 	transition-duration:0.4s;
   }
 .navbar a.active {
@@ -87,6 +86,7 @@ body {
 	margin-left:5%;
 	margin-top:5%;
 	margin-right:5%;
+	transition-duration:0.4s;
 }
 
 .bold {
@@ -105,14 +105,213 @@ body {
   background-color: #333;
   color: white;
   text-align: center;
+  transition-duration:0.4s;
 }
 
 .footlink {
   color:white;
 }
+
+/* LITTLE SCREENS */
+
+@media (max-width: 560px) {
+.footbreak {
+  display:inline;
+}
+.postdivider {
+  display:none;
+  width:5px;
+  background-color: #eee;
+  border-radius: 16px;
+  height: 70px;
+  margin-top:auto;
+  margin-bottom:auto;
+  transition-duration:0.4s;
+}
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  font-size:4vw;
+  background-color: #333;
+  color: white;
+  text-align: center;
+  transition-duration:0.4s;
+}
+.postcontainer {
+  gap:10px;
+  flex-direction:column;
+  display:flex;
+  padding:10px;
+  border-radius:26px;
+  justify-content:center;
+  margin:none;
+  width:fit-content;
+  background-color:#fafafa;
+  margin:auto;
+  margin-bottom:10px;
+  transition-duration:0.4s;
+}
+
+.postheader {
+  background-color: #eee;
+  border-radius:16px;
+  border-style:solid;
+  color:#007fa4;
+  border-color:#eee;
+  padding:10px;
+  font-weight:900;
+  font-size:30px;
+  transition-duration:0.4s;
+}
+
+.date {
+  font-weight:500;
+  transition-duration:0.4s;
+  content-align:center;
+
+}
+
+.twopostcontainer {
+  display:flex;
+  flex-direction: column;
+  transition-duration:0.4s;
+}
+}
+
+/* MOBILE */
+
+@media (max-width: 940px) and (min-width:560px) {
+.footbreak {
+  display:none;
+}
+.postcontainer {
+  gap:10px;
+  flex-direction:column;
+  display:flex;
+  padding:10px;
+  border-radius:26px;
+  justify-content:center;
+  margin:none;
+  width:fit-content;
+  background-color:#fafafa;
+  margin:auto;
+  margin-bottom:10px;
+  transition-duration:0.4s;
+}
+
+.postheader {
+  background-color: #eee;
+  border-radius:16px;
+  border-style:solid;
+  color:#007fa4;
+  border-color:#eee;
+  padding:10px;
+  font-weight:900;
+  font-size:30px;
+  transition-duration:0.4s;
+}
+
+.date {
+  font-weight:500;
+  transition-duration:0.4s;
+  content-align:center;
+
+}
+
+.twopostcontainer {
+  display:flex;
+  transition-duration:0.4s;
+}
+
+.postdivider {
+  opacity:0;
+  width:5px;
+  background-color: #eee;
+  border-radius: 16px;
+  height: 70px;
+  margin-top:auto;
+  margin-bottom:auto;
+  transition-duration:0.4s;
+}
+
+}
+
+/* DESKTOP */
+
+@media (min-width: 940px) {
+
+.footbreak {
+  display:none;
+}
+
+.postcontainer {
+  gap:10px;
+  flex-direction:row;
+  display:flex;
+  padding:10px;
+  border-radius:26px;
+  justify-content:center;
+  margin:none;
+  width:fit-content;
+  background-color:#fafafa;
+  margin:auto;
+  margin-bottom:10px;
+  transition-duration:0.4s;
+}
+
+.postheader {
+  background-color: #eee;
+  border-radius:16px;
+  border-style:solid;
+  color:#007fa4;
+  border-color:#eee;
+  padding:10px;
+  font-weight:900;
+  font-size:2.5vw;
+  transition-duration:0.4s;
+}
+
+.date {
+  font-weight:500;
+  transition-duration:0.4s;
+  content-align:center;
+
+}
+
+.twopostcontainer {
+  display:flex;
+  transition-duration:0.4s;
+}
+
+.postdivider {
+  width:5px;
+  background-color: #eee;
+  border-radius: 16px;
+  height: 70px;
+  margin-top:auto;
+  margin-bottom:auto;
+  transition-duration:0.4s;
+}
+
+}
+
+.noselect {
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
+.postlink {
+  color:#007fa4;
+  display:block;
+}
 		</style>
 	</head>
 	<body>
+	
+	<!--START OF NAVBAR-->
+	
 		<div class="navbar" id="navBar">
 			<a href="https://beta.worldwidepixel.ca">
 			<img class="navimg" src="img/logo.svg">
@@ -124,20 +323,71 @@ body {
 				<i class="fa fa-bars"></i>
 			</a>
 		</div>
+	
+		
+		<!--END OF NAVBAR | START OF LANDING INTRO-->
+		
 		<div class="landing">
 		<h1 class="bold">blog</h1>
 		<h2 class="regular">This my *attempt* at a blog.</h2>
 		<h1 class="bold">404?</h1>
-		Currently, there is nothing here. No big deal! This wall of text is only temporary. I thought I’d start a blog, by the way. Sounds fun.
+		Currently, there is almost nothing here. No big deal! This wall of text is only temporary. I thought I’d start a blog, by the way. Sounds fun.
 <br><br>
 		I know, it’s just a blank webpage. Fancy. But soon, we will all enjoy the wonderous and hopefully mobile friendly web design of yours truly.
 
 		<br><br><text style="font-size:20px;" class="regular">-pixel</text>
 		</div>
 		
-		<div class="footer">
-			<p><a class="bold">designed by worldwidepixel.</a> <a class="footlink" href="https://beta.worldwidepixel.ca">home</a> • <a class="footlink" href="https://worldwidepixel.ca/pixelpack">pixelpack</a> • <a class="footlink" href="https://worldwidepixel.ca/aboutme">about</a> • <a class="footlink" href="https://worldwidepixel.ca">old home</a></p>
+		<h1 class="bold landing">recent posts</h1>
+		<!--BEGINNING OF POSTS | END OF INTRO-->
+		
+	<div class="twopostcontainer">
+
+		<div class="postcontainer">
+		<a class="postlink" href="./posts/i-started-a-blog.html">
+			<div class="postheader">I started a blog!</div>
+			<div class="postheader"><a class="date">7/4/2023</a></div>
 		</div>
+		</a>
+	<div class="postdivider"></div>
+		<div class="postcontainer">
+			<div class="postheader"><a class="noselect" style="border-radius:6px;background-color:#ddd;color:#ddd;"><-------></a></div>
+			<div class="postheader"><a class="date"><a class="noselect" style="border-radius:6px;background-color:#ddd;color:#ddd;"><-------></a></a></div>
+		</div>
+	</div>
+	<div class="twopostcontainer">
+		<div class="postcontainer">
+			<div class="postheader"><a class="noselect" style="border-radius:6px;background-color:#ddd;color:#ddd;"><-------></a></div>
+			<div class="postheader"><a class="date"><a class="noselect" style="border-radius:6px;background-color:#ddd;color:#ddd;"><-------></a></a></div>
+		</div>
+	<div class="postdivider"></div>
+		<div class="postcontainer">
+			<div class="postheader"><a class="noselect" style="border-radius:6px;background-color:#ddd;color:#ddd;"><-------></a></div>
+			<div class="postheader"><a class="date"><a class="noselect" style="border-radius:6px;background-color:#ddd;color:#ddd;"><-------></a></a></div>
+		</div>
+	</div>
+	<div class="twopostcontainer">
+		<div class="postcontainer">
+			<div class="postheader"><a class="noselect" style="border-radius:6px;background-color:#ddd;color:#ddd;"><-------></a></div>
+			<div class="postheader"><a class="date"><a class="noselect" style="border-radius:6px;background-color:#ddd;color:#ddd;"><-------></a></a></div>
+		</div>
+	<div class="postdivider"></div>
+		<div class="postcontainer">
+			<div class="postheader"><a class="noselect" style="border-radius:6px;background-color:#ddd;color:#ddd;"><-------></a></div>
+			<div class="postheader"><a class="date"><a class="noselect" style="border-radius:6px;background-color:#ddd;color:#ddd;"><-------></a></a></div>
+		</div>
+	</div>
+	
+	<br><br><br><br><br>
+	
+		<!--END OF POSTS | START OF FOOTER-->
+		
+		<div class="footer">
+			<p><a class="bold">designed by worldwidepixel.</a> <br class="footbreak"> <a class="footlink" href="https://beta.worldwidepixel.ca">home</a> • <a class="footlink" href="https://worldwidepixel.ca/pixelpack">pixelpack</a> • <a class="footlink" href="https://worldwidepixel.ca/aboutme">about</a> • <a class="footlink" href="https://worldwidepixel.ca">old home</a></p>
+		</div>
+		
+		<!--END OF FOOTER-->
+		
 	</body>
 	<script>
 	/* Toggle between adding and removing the "responsive" class to navbar when the user clicks on the icon */
